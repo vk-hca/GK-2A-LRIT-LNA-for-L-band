@@ -1,0 +1,68 @@
+versi terjemahan: kedua file teks
+
+Hanya beberapa catatan dan contoh mengubah LNB TV S band murah menjadi LNA L band untuk digunakan pada satelit cuaca GK-2A Korea tetapi juga berguna untuk penggunaan polarisasi linear L band lainnya seperti GOES dan satelit L band lainnya.
+
+Peralihan antara polarisasi vertikal dan horizontal dicapai dengan mengubah tegangan suplai pada coax dari 12v ke 14.5v untuk vertikal dan 15,5 ke 18v untuk horizontal seperti pada penggunaan LNB TV satelit normal. Ini adalah antena preamp dan dipole Rf yang terpisah untuk setiap polaritas, sirkuit daya dan penguat output yang umum untuk keduanya.
+
+LNB S band ini digunakan pada SES7 pada sinyal 108,2E MNC / Indovision 2,5 ghz yang mungkin merupakan satu-satunya satelit siaran langsung yang menggunakan S band, ketersediaan lokal untuk Indonesia dari banyak toko online yang menjual penerima top set DVB-S2 dan peralatan terkait untuk sekitar tanda $ 10 dolar.
+
+Ini berfungsi baik dengan RTL-SDR yang hanya membutuhkan injektor daya inline atau tee bias, output tee bias 5v dari SDR tidak cocok.
+
+Mounted offset dalam piringan C band 1,8mt dengan LNB C band prima yang diatur pada Telstar Vantage berfungsi dengan baik dengan 100 meter kabel RG11 berjalan ke V3 RTL-SDR menggunakan perangkat lunak yang disediakan oleh proyek LRIT ini di github. https://vksdr.com/xrit-rx
+
+Ada 2 langkah dalam konversi penuh, modifikasi PCB menjadi LNA dual band polaritas LNA, lebih disukai tetapi secara opsional memodifikasi dipol dalam umpan dari 2,5gis menjadi 1,7 gigs. Keduanya dengan hati-hati mudah dilakukan.
+
+Anda membutuhkan sekitar 15 cm mini teflon coax, untuk PCB dan sekitar 3x4 cm tembaga atau kuningan, atau pcb polos untuk dipol.
+
+PCB hanya membutuhkan 2 track cut, satu di input ke S band filter yang lain di coupling input kapasitor ke output amplifier, ini melewati filter dan tahap mixer. Hapus rongga DRO, ini akan memerlukan driver spline kecil tetapi hal apa pun yang cocok ok. Manik dapat pergi tetapi lebih baik dihapus untuk akses, hanya tersisa jika Anda mungkin ingin mengembalikan mixer di masa depan. Kemudian instal jumper coax.
+
+Beberapa petunjuk
+
+    Jauhkan jari Anda dari papan, terutama tahap input untuk keselamatan ESD!
+
+    bekerja perlahan dan hati-hati.
+
+    lepaskan setiap pcb laquer pada titik-titik solder sebelum timah mereka dan menyolder membujuk.
+
+    pasang pelindung luar membujuk sebelum menyolder bagian dalam untuk menghindari kekuatan pada trek kecil, cepat untuk menghindari de-laminating mereka.
+
+    Komponen chip yang kecil dapat dilepas untuk menghindari pemotongan lintasan tetapi tidak berencana mengembalikannya.
+
+    Potongan 15 cm mini teflon coax yang cocok sering dapat ditemukan di antena router wifi lama atau di dalam jika memiliki 2 konektor tnc seperti perangkat Dlink WRT54.
+
+Lihat gambar untuk detailnya.
+
+Sebelum memodifikasi dipol, periksa apakah Anda bisa mendapatkan sinyal. Ini harus mengkonfirmasi keberhasilan dengan mod PCB. Jika Anda mendapatkan cukup di lokasi Anda dengan piringan Anda untuk penerimaan yang andal, Anda memiliki opsi untuk tidak mengubah dipol umpan.
+
+Memperluas mereka akan membuat perbedaan yang berarti, tetapi Anda harus melewati 2 segel silikon untuk mengangkat bagian depan dengan hati-hati agar tidak merusaknya. Bagian depan dipegang dengan menjepit bubungan pada casting, ada manik-manik silikon yang dapat dipotong dan dilepas untuk mendapatkan alat hadiah. Ada segel kedua antara bagian belakang penutup dan bibir casting, cukup gunakan tuas tekanan yang stabil pada punggung bukit yang Anda jalani untuk membebaskannya. Ini sulit dan risiko terlalu banyak terlalu cepat yang dapat merusak plastik yang akan berubah bentuk sedikit.
+
+Mengambil tindakan pencegahan ESD membeli menempatkan klip mengarah ke casting dan kemudian ke ujung dipol untuk menyingkatnya sebelum menyolder, lepaskan dengan cara terbalik sebelum pindah ke yang berikutnya. ulangi 4 kali.
+
+Panjang semua harus sekitar 88mm, Anda dapat menggunakan strip tembaga atau kuningan, beberapa papan sirkuit, meratakan secarik tabung tembaga selebar 5 mm. Memasang ekstensi yang berdiri di tepi memiliki efek membawa dipol ke depan dari belakang umpan agar sesuai dengan panjang gelombang yang lebih panjang, hindari kontak dengan kepala sekrup.
+
+lihat lagi gambar untuk detailnya.
+
+Setelah pengujian lagi bersihkan silikon lama dan ganti keduanya saat memasang penutup. Pastikan dengan mengisi celah air mengalir sebagai yang terpasang menghadap ke bawah.
+
+Hasil akhir harus seperti gambar lnb_gk-2a.png
+
+
+Menemukan GK-2A dengan C band
+
+Jika sistem Anda tampaknya tidak berfungsi, Anda dapat memverifikasi penyelarasan antena dengan cara lain.
+Beberapa petunjuk, sehubungan dengan hidangan fokus utama. 1.8mt
+Mengatur kemiringan untuk lokasi Anda tampaknya lebih penting daripada membuat hidangan tidak cukup memuncak.
+
+Dari dalam footprint Laosat1 di 128.5E, jika Anda menemukannya, piringan mengarah cukup dekat pada GK-2A.
+Dari dalam jejak Telstar 18 Vantage di 138E jika Anda menemukannya, letakkan umpan di sisi bawah (timur) dari skalar pita C dan Anda akan menemukan GK-2A.
+
+Beacon satelit juga dapat digunakan jika penerima DVB-S2 tidak ada, kurangi dari 5150 untuk menggunakan keluaran LNB Cband dengan SDR misalnya Laos di 1 5150.00 - 3695.00 = 1455.00
+
+Laosat 1 3695.00 H / 3699.00 V / 3717.00 H
+Telstar 18 3623.00 L atau V / 3625.00 L atau V / 4199.00 L atau H
+
+
+
+
+
+
