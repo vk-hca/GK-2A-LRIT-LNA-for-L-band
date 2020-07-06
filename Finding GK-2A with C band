@@ -1,0 +1,11 @@
+If your system appears not to work you can verify the dish alignment another way.
+A couple of hints, with respect to a prime focus dish. 1.8mt
+Setting the skew for your location seems more important than having the dish not quite peaked up.
+
+From within the foot print of Laosat1 at 128.5E, if you find it, the dish is pointing near enough at GK-2A. 
+From within the footprint of Telstar 18 Vantage at 138E if you find it, put the feed on the lower (eastern) side of the C band scalar and you should find GK-2A.
+
+Satellite beacons can also be used in no DVB-S2 reciever is to hand, subtract from 5150 to use a Cband LNB outout with SDR eg Laosat 1 5150.00 -	3695.00 = 1455.00
+
+Laosat 1  	3695.00 H / 3699.00 V / 3717.00 H 
+Telstar 18 3623.00 L or V / 3625.00 L or V / 4199.00 L or H
