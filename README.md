@@ -2,7 +2,7 @@
 
 Just some notes and an example of converting a cheap S band TV LNB into an L band LNA for use on on the Korean GK-2A weather satellite but also useful for any other L band linear polarisation use like the GOES and other L band satellites.
 
-Switching between vertical and horizontal polarisations is achieved by changing the supply voltage on the coax from 12v to 14.5v for vertical and 15.5 to 18v for horizontal as in the normal satellite TV LNB usage. The is a separate RF preamp and dipole antenna for each polarity, the power circuitry and output amplifier are common to both.
+Switching between vertical and horizontal polarisations is achieved by changing the supply voltage on the coax from 12v to 14.5v for vertical and 15.5 to 18v for horizontal as in the normal satellite TV LNB usage. There is a separate RF preamp and dipole antenna for each polarity, the power circuitry and output amplifier are common to both.
 
 These S band LNBs are used on the SES7 at 108.2E MNC / Indovision 2.5 ghz signal which is possibly the only direct broadcast satellite to use S band, availability is local to Indonesia from many online shops selling DVB-S2 set top receivers and associated equipment for around the $10 dollar mark new. An online Ali express shop has a similar lnb but more expensive and a different dipole setup and board layout.  
 
