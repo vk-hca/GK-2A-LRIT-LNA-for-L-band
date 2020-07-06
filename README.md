@@ -24,7 +24,7 @@ A few pointers
 
 - work slowly and carefully.
 
--remove any pcb laquer on the solder points before tinning them and soldering the coax.
+- remove any pcb laquer on the solder points before tinning them and soldering the coax.
 
 - attach the coax outer shield before soldering the inner to avoid any force on the tiny tracks, be quick to avoid de-laminating them.
 
@@ -32,7 +32,7 @@ A few pointers
 
 - A suitable 15 cm scrap of mini teflon coax can often be found in an old wifi router antenna or inside if it has 2 tnc connectors like the Dlink WRT54 devices.
 
-Refer to the image for details.
+Refer to the images for details.
 
 Before modifying the dipoles, check if you can get signal. This should confirm success with the pcb mod. If you get enough at your location with your dish for reliable reception you have the option of not modifying the feed dipoles.
 
