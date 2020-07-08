@@ -1,7 +1,7 @@
 Comparison to a minimal set up
 ==============================
 
-Here is an example of a quick minimal setup that works with just a cheap inline catv amp and power injector, its enough to get you started with out any construction work, obviously not a permanent installation.
+Here is an example of a quick minimal setup that works with just a cheap inline catv amp and power injector, its enough to get you started with out any construction work, obviously not a permanent installation. Just enough to find the bird, check your software set.
 
 Open the end of some 75 ohm coax and form a dipole about 88 mm across, centre conductor on one side, screen on the other. leave a couple of mm insulation on the centre to ensure 100% there is no short circuit because the amp passes the power input, and mount it in the focal point of the dish. This dish is 2.1 mt.
 
